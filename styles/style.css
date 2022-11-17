@@ -1,0 +1,123 @@
+body{
+    background-color: #333333;
+    font-size: 14px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+    border: none;
+    padding: 10px;
+    
+    overflow: hidden;
+    height: 50px;
+    outline: none;
+    text-align: center;
+
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.app {
+    border: 2px #444444 solid;
+    background-color: #222222;
+    padding: 30px;
+    margin-block: 30px;
+    border-radius: 14px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding-bottom: 40px;
+    align-content: center;
+ 
+}
+
+.app-image {
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+ 
+}
+
+#display-image {
+    width: 400px;
+    height: 400px;
+    background-image: URL('/images/meme1.png');
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    
+}
+
+.text-box {
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 25px;
+
+}
+
+.app-photo-picker {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+ 
+}
+
+.download {   
+ 
+}
+
+#meme-list {
+    width: 100%;
+    font-size: 20px;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+#btn-download {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    padding:14px;
+    border-radius: 7px;
+    background-color: rgb(127, 12, 35);
+    color: #ffffff;
+
+}
+
+@media (any-hover: hover) {
+    #btn-download:hover {
+      background: crimson;
+    }
+    #meme-list:hover {
+        background: #333333;
+      }
+    textarea:hover {
+        background: #333333;
+    }
+  
+  
+
+  }

@@ -13,10 +13,10 @@ textarea {
     width: 100%;
     height: 50px;
     resize: vertical;    
-    padding: 10px;
-
+    padding: 5px;
+    
     border: black 2px solid;
-    border-radius: 10px;
+    
     overflow: hidden;
     outline: none;
 
@@ -24,6 +24,16 @@ textarea {
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+
+input::file-selector-button {
+    font-weight: normal;
+    color: white;
+    padding: 7px;
+    border: rgb(127, 12, 35) 2px solid;
+    border-radius: 5px;
+    background-color: rgb(127, 12, 35);
+    margin-top: 15px;
 }
 
 /* CLASSES */
@@ -59,17 +69,16 @@ textarea {
 .app-image {
     display: flex;
     flex-direction: column;
-    background-color: #222222;
+    background-color: black;
  
 }
 
 
-
 .text-box {
-    background-color: #111111;
+    background-color: black;
     color: #ffffff;
     font-size: 25px;
-
+    padding: 5PX;
 }
 
 .app-photo-picker {
@@ -88,7 +97,7 @@ textarea {
 #display-image {
     width: 400px;
     height: 400px;
-    background-image: URL('/images/meme1.png');
+    /* background-image: URL('/images/meme1.png'); */
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -109,7 +118,7 @@ textarea {
     width: 100%;
     font-size: 20px;
     font-weight: bold;
-    padding:14px;
+    padding:10px;
     border-radius: 7px;
     background-color: rgb(127, 12, 35);
     border:rgb(127, 12, 35) 2px solid;
@@ -118,20 +127,14 @@ textarea {
 
 /* WHAT IS THIS CALLED? */
 
-@media (any-hover: hover) {
+#btn-download:hover, input::file-selector-button:hover {
+    background: crimson;
+    border: #ffffff 2px solid;
+    transition: 150ms ease-in-out;
+}
 
-    #btn-download:hover {
-      background: crimson;
-      border: #ffffff 2px solid;
-    }
-
-    #meme-list:hover {
-        background: #333333;
-        border: #ffffff 2px solid;
-      }
-
-    textarea:hover {
-        background: #333333;
-        border: #ffffff 2px solid;
-    }
-  }
+#meme-list:hover, textarea:hover {
+    background: #333333;
+    border: #ffffff 2px solid;
+    transition: 150ms ease-in-out;
+}

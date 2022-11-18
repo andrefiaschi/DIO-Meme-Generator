@@ -1,8 +1,8 @@
 # DIO-Meme-Generator
 
-Live sobre HTML, CSS e JavaScript
+Lives sobre HTML, CSS e JavaScript
 
-# MEME GENERATOR
+## MEME GENERATOR
 
 Meu projeto de um Meme Generator feito durante as lives da DIO_.
 =)
